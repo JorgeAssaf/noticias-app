@@ -8,6 +8,7 @@ interface NoticiaProps {
 const Noticia = ({ noticia }: NoticiaProps) => {
   return (
     <>
+
       <Grid component='article' item md={6} lg={4}>
         <Card>
           <CardMedia component='img' height={250} image={noticia.image_url!} alt={noticia.title} />
@@ -41,6 +42,9 @@ const Noticia = ({ noticia }: NoticiaProps) => {
 
         </Card>
       </Grid>
+
+
+
     </>
   )
 }

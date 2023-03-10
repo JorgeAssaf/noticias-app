@@ -37,7 +37,7 @@ export const useStore = create<Store, [['zustand/persist', any]]>(
       fechNoticias: async (categoria: string, pagina: number) => {
         const url = `https://newsdata.io/api/1/news?apikey=pub_18638aa6e82a58ee4006b613d280059595d83&q=${pagina}&country=mx&category=${categoria}`
         const { data } = await axios.get(url)
-        console.log(data);
+
         set({ noticias: data.results, totalNoticias: data.totalResults })
       },
     }),
