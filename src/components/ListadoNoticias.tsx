@@ -1,8 +1,9 @@
 import { Grid, Pagination, Stack, Typography } from '@mui/material'
-import { useNoticias } from '../context/NoticiasProvider'
+
 import { useStore } from '../store/zustand'
 
 import Noticia from './Noticia'
+
 const ListadoNoticias = () => {
   // const { noticias, totalNoticias, handlePagina, pagina } = useNoticias()
   const { totalNoticias, noticias, handlePagina, pagina } = useStore((state) => state)
@@ -16,7 +17,7 @@ const ListadoNoticias = () => {
       </Typography>
       <Grid component='section' container spacing={2}>
         {noticias?.map((noticia) => (
-          <Noticia key={noticia.url} noticia={noticia} />
+          <Noticia key={noticia.link} noticia={noticia} />
         ))}
       </Grid>
       <Stack
