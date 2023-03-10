@@ -10,7 +10,7 @@ const CATEGORIAS = [
   { value: 'health', label: 'Salud' },
   { value: 'science', label: 'Ciencia' },
   { value: 'sports', label: 'Deportes' },
-  { value: ' tecnologhy ', label: 'Tecnología' },
+  { value: ' technology ', label: 'Tecnología' },
 ]
 const Form = () => {
   // const { handleNoticia, categoria } = useNoticias()
